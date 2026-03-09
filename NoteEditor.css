@@ -1,0 +1,139 @@
+.note-editor {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background: white;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.editor-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.editor-title {
+    flex: 1;
+    font-size: 24px;
+    font-weight: bold;
+    border: none;
+    outline: none;
+    padding: 0;
+    border-bottom: 2px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.editor-title:focus {
+    border-bottom-color: #667eea;
+}
+
+.editor-actions {
+    display: flex;
+    gap: 10px;
+    margin-left: 20px;
+}
+
+.editor-actions button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.save-btn {
+    background: #4caf50;
+    color: white;
+}
+
+.save-btn:hover {
+    background: #45a049;
+}
+
+.delete-btn {
+    background: #f44336;
+    color: white;
+}
+
+.delete-btn:hover {
+    background: #da190b;
+}
+
+.cancel-btn {
+    background: #999;
+    color: white;
+}
+
+.cancel-btn:hover {
+    background: #666;
+}
+
+.editor-meta {
+    display: flex;
+    gap: 10px;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ddd;
+}
+
+.category-select,
+.tags-input {
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.category-select {
+    flex: 0.3;
+}
+
+.tags-input {
+    flex: 0.7;
+}
+
+.editor-content {
+    flex: 1;
+    padding: 20px;
+    border: none;
+    outline: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 14px;
+    line-height: 1.6;
+    resize: none;
+}
+
+/* Dark Mode */
+.dark-mode .note-editor {
+    background: #2a2a2a;
+    color: #e0e0e0;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
+.dark-mode .editor-title {
+    color: #e0e0e0;
+}
+
+.dark-mode .editor-title:focus {
+    border-bottom-color: #a8b8ff;
+}
+
+.dark-mode .editor-meta,
+.dark-mode.editor-header {
+    border-color: #444;
+}
+
+.dark-mode .category-select,
+.dark-mode .tags-input {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode .editor-content {
+    background: #2a2a2a;
+    color: #e0e0e0;
+}

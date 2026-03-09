@@ -1,0 +1,83 @@
+.notes-list {
+    flex: 1;
+    overflow-y: auto;
+}
+
+.note-item {
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.note-item:hover {
+    background: #f9f9f9;
+    border-color: #667eea;
+}
+
+.note-item.active {
+    background: #667eea;
+    color: white;
+    border-color: #667eea;
+}
+
+.note-item h3 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note-preview {
+    margin: 0 0 8px 0;
+    font-size: 12px;
+    color: #666;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.note-item.active .note-preview {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.note-category {
+    font-size: 11px;
+    background: #eee;
+    padding: 2px 6px;
+    border-radius: 3px;
+    display: inline-block;
+}
+
+.note-item.active .note-category {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.no-notes {
+    text-align: center;
+    color: #999;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Dark Mode */
+.dark-mode .note-item {
+    background: #333;
+    border-color: #444;
+}
+
+.dark-mode .note-item:hover {
+    background: #444;
+}
+
+.dark-mode .note-preview {
+    color: #aaa;
+}
+
+.dark-mode .note-category {
+    background: #555;
+    color: #e0e0e0;
+}

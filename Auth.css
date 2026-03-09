@@ -1,0 +1,131 @@
+.auth-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.auth-box {
+    background: white;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+.auth-box h1 {
+    text-align: center;
+    color: #667eea;
+    margin-bottom: 10px;
+}
+
+.auth-box h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.auth-box form {
+    display: flex;
+    flex-direction: column;
+}
+
+.auth-box input {
+    padding: 12px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    font-family: inherit;
+}
+
+.auth-box input:focus {
+    outline: none;
+    border-color: #667eea;
+    box-shadow: 0 0 5px rgba(102, 126, 234, 0.3);
+}
+
+.auth-box button {
+    padding: 12px;
+    background: #667eea;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.auth-box button:hover:not(:disabled) {
+    background: #764ba2;
+}
+
+.auth-box button:disabled {
+    background: #ccc;
+    cursor: not-allowed;
+}
+
+.auth-box p {
+    text-align: center;
+    margin-top: 20px;
+    color: #666;
+}
+
+.auth-box a {
+    color: #667eea;
+    text-decoration: none;
+}
+
+.auth-box a:hover {
+    text-decoration: underline;
+}
+
+.error-message {
+    background: #fee;
+    color: #c33;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.theme-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+    cursor: pointer;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.dark-mode .auth-container {
+    background: linear-gradient(135deg, #1e1e1e 0%, #2d2d2d 100%);
+}
+
+.dark-mode .auth-box {
+    background: #2a2a2a;
+    color: #e0e0e0;
+}
+
+.dark-mode .auth-box h1,
+.dark-mode .auth-box h2 {
+    color: #a8b8ff;
+}
+
+.dark-mode .auth-box input {
+    background: #333;
+    color: #e0e0e0;
+    border-color: #444;
+}
+
+.dark-mode .auth-box input:focus {
+    border-color: #a8b8ff;
+}
